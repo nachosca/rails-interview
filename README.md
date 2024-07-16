@@ -16,6 +16,12 @@ To run the TodoApi in your local environment:
 
 `bin/puma`
 
+## Postman Collection
+
+Import the Postman Collection on
+
+`postman_collection.json`
+
 ## Test
 
 To run tests:

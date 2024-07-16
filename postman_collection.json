@@ -1,0 +1,171 @@
+{
+	"info": {
+		"_postman_id": "507e6403-38cd-46eb-9297-cc1df72313b7",
+		"name": "TODO list",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5585564"
+	},
+	"item": [
+		{
+			"name": "List Todo lists",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/todolists",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"todolists"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Todo list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/todolists/1",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"todolists",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New item",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"todo_item\": {\r\n        \"name\": \"Test3\",\r\n        \"completed\": true\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/todolists/1/todoitem",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"todolists",
+						"1",
+						"todoitem"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit item",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"todo_item\": {\r\n        \"name\": \"Test5\",\r\n        \"completed\": true\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/todolists/1/todoitem/5",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"todolists",
+						"1",
+						"todoitem",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Complete item",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"todo_item\": {\r\n        \"name\": \"Test2\",\r\n        \"completed\": true\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/todolists/1/todoitem/5/complete",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"todolists",
+						"1",
+						"todoitem",
+						"5",
+						"complete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete item",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/todolists/1/todoitem/4",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"todolists",
+						"1",
+						"todoitem",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
